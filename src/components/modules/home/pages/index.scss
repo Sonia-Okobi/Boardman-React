@@ -3,7 +3,7 @@
 .home-page {
   &__home-hero {
     position: relative;
-    overflow-x: clip;
+    overflow-x: hidden;
 
     &::after {
       content: '';
