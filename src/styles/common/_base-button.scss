@@ -1,0 +1,24 @@
+.base-button {
+  border-radius: 8px;
+  width: fit-content;
+  color: var(--boardman-black);
+  padding: 13px 38px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+
+  &--primary {
+    @extend .base-button;
+    background: var(--boardman-primary);
+  }
+
+  &--inverted{
+    @extend .base-button;
+    background: #F3F5F9;
+    border: 0.5px solid #E0E1E2;   
+  }
+}

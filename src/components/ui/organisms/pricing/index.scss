@@ -1,0 +1,161 @@
+@import '../../../../styles/common/_mixins.scss';
+
+.pricing {
+  background: linear-gradient(
+    202.43deg,
+    rgba(46, 87, 129, 0.05) -110.56%,
+    rgba(46, 87, 130, 0.05) 154.64%
+  );
+  box-shadow: inset 0px -3px 8px rgba(var(--white), 0.1);
+  border-radius: 16px;
+  background: #204379;
+  padding-top: 32px;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  &__content {
+    color: rgb(var(--white));
+
+    &__title {
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 30px;
+      color: rgb(var(--white));
+      padding-left: 64px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      @include mobile(986px) {
+        padding-left: 16px;
+      }
+
+      span {
+        img {
+          display: flex;
+          width: 32px;
+          height: 30px;
+        }
+      }
+    }
+
+    &__headers {
+      margin-left: 16px;
+      margin-right: 16px;
+      padding: 19px 0 18px 48px;
+      display: flex;
+      justify-content: space-between;
+      background: linear-gradient(
+        202.43deg,
+        rgba(46, 87, 129, 0.25) -110.56%,
+        rgba(46, 87, 130, 0.25) 154.64%
+      );
+      box-shadow: inset 0px -3px 8px rgba(var(--white), 0.1);
+      border-radius: 4px;
+
+      @include mobile(986px) {
+        display: none;
+      }
+
+      &__header {
+        font-weight: 600;
+        line-height: 30px;
+        color: rgba(var(--white), 0.7);
+        flex: 1;
+
+        &:not(&:first-child) {
+          padding-left: 73px;
+        }
+
+        &:last-of-type {
+          &[data-wide='true'] {
+            flex: 2;
+          }
+        }
+
+        @include mobile(986px) {
+          display: none;
+        }
+      }
+    }
+
+    &__prices {
+      @include mobile(986px) {
+        padding: 0 16px;
+      }
+
+      &__price {
+        display: flex;
+        width: 100%;
+        border-bottom: 2px solid rgb(46 87 129);
+        border-radius: 4px;
+        padding-left: 48px;
+
+        @include mobile(986px) {
+          border: 0;
+          flex-wrap: wrap;
+          gap: 40px;
+          justify-content: space-between;
+
+          &:first-of-type {
+            border-bottom: 2px solid rgb(46 87 129);
+          }
+        }
+
+        p {
+          font-weight: 600;
+          line-height: 30px;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          flex: 1;
+          border-right: 2px solid rgb(46 87 129);
+
+          &:not(&:first-child) {
+            padding-left: 73px;
+
+            @include mobile(986px) {
+              padding-left: 0;
+            }
+          }
+
+          @include mobile(986px) {
+            border: none;
+            white-space: nowrap;
+          }
+
+          &:before {
+            content: attr(data-heading);
+            display: none;
+
+            @include mobile(986px) {
+              display: block;
+            }
+          }
+
+          &:first-of-type {
+            margin-left: 16px;
+
+            @include mobile(986px) {
+              margin-left: 0;
+            }
+          }
+
+          &:last-of-type {
+            margin-right: 16px;
+            border-right: 0;
+
+            &[data-wide='true'] {
+              flex: 2;
+            }
+          }
+        }
+      }
+    }
+
+    .fees {
+      border-bottom: none;
+    }
+  }
+}

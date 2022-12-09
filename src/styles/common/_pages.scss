@@ -1,0 +1,103 @@
+@import '../../styles/common/mixins';
+
+.app-container {
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @include mobile(986px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__section {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.rectangle {
+  &::after {
+    content: '';
+    position: absolute;
+    top: -204px;
+    right: 0;
+    background: var(--boardman-purple2);
+    height: 536px;
+    width: 481px;
+    z-index: -1;
+  }
+}
+
+.card {
+  border-radius: 16px;
+  background: #fff;
+}
+
+.hero {
+  background: url(../../assets/svg/vector.svg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 45px;
+  position: relative;
+  top: 0;
+
+  @include mobile(1080px) {
+    background: none;
+  }
+}
+
+.hero-header {
+  max-width: 504px;
+}
+
+.hero-description {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 504px;
+
+  @include mobile(500px) {
+    font-size: 16px;
+  }
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  span {
+    img {
+      display: flex;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.tab-slider {
+  box-shadow: 2px 4px 130px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+
+  .tab {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    flex: 1;
+  }
+
+  .active-tab {
+    border-radius: 4px;
+  }
+}

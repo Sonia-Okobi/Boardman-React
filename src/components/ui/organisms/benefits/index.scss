@@ -1,0 +1,148 @@
+@import '../../../../styles/common/mixins';
+
+.benefits {
+  position: relative;
+  padding-top: 100px;
+  margin: 0 64px;
+
+  &:nth-child(6) {
+    .benefits-button {
+      display: flex;
+
+      @include mobile(1252px){
+        display: none;
+      }
+    }
+
+    img{
+      object-position: center;
+    }
+  }
+
+  @include mobile(986px) {
+    margin: 0 32px;
+  }
+
+  @include mobile(600px) {
+    margin: 0 16px;
+  }
+
+  &::after {
+    content: '';
+    background: url(../../../../assets/svg/Lines.svg) var(--boardman-purple2);
+    height: 563px;
+    border-radius: 16px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    left: 0;
+
+    @include mobile(600px) {
+      height: 516px;
+    }
+  }
+
+  @include mobile(1252px) {
+    padding: 70px 32px 0;
+  }
+
+  @include mobile(600px) {
+    padding: 56px 16px 0;
+  }
+
+  &:nth-child(odd) {
+    &:after {
+      background: #f8fafd;
+    }
+
+    .benefits__content {
+      flex-direction: row-reverse;
+      color: var(--boardman-black);
+      justify-content: space-between;
+
+      @include mobile(1252px) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 1003px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(var(--white));
+    position: relative;
+    margin-bottom: 130px;
+
+    @include mobile(1252px) {
+      flex-direction: column-reverse;
+      max-width: fit-content;
+      gap: 32px;
+    }
+
+    &:nth-child(4) {
+      h2 {
+        max-width: 417px;
+      }
+    }
+
+    &__image {
+      max-width: 440px;
+      height: 550px;
+      box-shadow: 0px 15px 50px rgba(46, 87, 130, 0.32);
+      flex-shrink: 0;
+      border-radius: 16px;
+      display: flex;
+      overflow: hidden;
+
+      @include mobile(1252px) {
+        max-width: fit-content;
+      }
+
+      @include mobile(600px) {
+        height: 289px;
+      }
+
+      img {
+        width: 100%;
+        flex-shrink: 0;
+        object-position: top;
+      }
+    }
+
+    &__text {
+      h2 {
+        margin-top: 69px;
+        margin-bottom: 16px;
+        font-weight: 700;
+        line-height: 43px;
+
+        @include mobile(1252px) {
+          margin-top: 0;
+        }
+
+        @include mobile(600px) {
+          font-size: 24px;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 497px;
+        margin-bottom: 56px;
+
+        @include mobile(600px) {
+          font-size: 16px;
+        }
+      }
+
+      .benefits-button {
+        display: none;
+      }
+    }
+  }
+}

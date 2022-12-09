@@ -1,0 +1,32 @@
+<svg width="181" height="36" viewBox="0 0 181 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_107_7125" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="36">
+<rect x="0.600098" width="39" height="36" fill="white"/>
+</mask>
+<g mask="url(#mask0_107_7125)">
+<path d="M16.3593 19.158L9.0206 23.25L10.6594 15.0328L4.48401 9.34453L12.8361 8.35779L16.3593 0.75L19.8824 8.35779L28.2345 9.34453L22.0591 15.0328L23.6979 23.25L16.3593 19.158Z" fill="#2C4F7A"/>
+</g>
+<mask id="mask1_107_7125" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="36" y="0" width="39" height="36">
+<rect x="36.6001" width="38" height="36" fill="white"/>
+</mask>
+<g mask="url(#mask1_107_7125)">
+<path d="M52.0144 19.158L44.8741 23.25L46.4686 15.0328L40.4601 9.34453L48.5865 8.35779L52.0144 0.75L55.4424 8.35779L63.5687 9.34453L57.5603 15.0328L59.1548 23.25L52.0144 19.158Z" fill="#2C4F7A"/>
+</g>
+<mask id="mask2_107_7125" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="71" y="0" width="40" height="36">
+<rect x="71.6001" width="39" height="36" fill="white"/>
+</mask>
+<g mask="url(#mask2_107_7125)">
+<path d="M87.3593 19.158L80.0206 23.25L81.6594 15.0328L75.484 9.34453L83.8361 8.35779L87.3593 0.75L90.8824 8.35779L99.2345 9.34453L93.0591 15.0328L94.6979 23.25L87.3593 19.158Z" fill="#2C4F7A"/>
+</g>
+<mask id="mask3_107_7125" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="106" y="0" width="40" height="36">
+<rect x="106.6" width="39" height="36" fill="white"/>
+</mask>
+<g mask="url(#mask3_107_7125)">
+<path d="M122.359 19.158L115.021 23.25L116.659 15.0328L110.484 9.34453L118.836 8.35779L122.359 0.75L125.882 8.35779L134.234 9.34453L128.059 15.0328L129.698 23.25L122.359 19.158Z" fill="#2C4F7A"/>
+</g>
+<mask id="mask4_107_7125" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="142" y="0" width="39" height="36">
+<rect x="142.6" width="38" height="36" fill="white"/>
+</mask>
+<g mask="url(#mask4_107_7125)">
+<path d="M158.014 19.158L150.874 23.25L152.469 15.0328L146.46 9.34453L154.587 8.35779L158.014 0.75L161.442 8.35779L169.569 9.34453L163.56 15.0328L165.155 23.25L158.014 19.158Z" fill="#2C4F7A"/>
+</g>
+</svg>

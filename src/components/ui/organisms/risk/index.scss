@@ -1,0 +1,109 @@
+@import '../../../../styles/common/mixins';
+
+.risk {
+  &:nth-child(odd) {
+    .risk__content {
+      flex-direction: row-reverse;
+      margin-left: auto;
+
+      &__image {
+        @include mobile(600px) {
+          padding-left: 20px;
+        }
+      }
+
+      @include mobile(1118px) {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    margin-right: auto;
+    .risk__content {
+      &__image {
+        @include mobile(600px) {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    .risk__content {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    color: rgb(var(--white));
+    max-width: 1305px;
+    margin-bottom: 106px;
+
+    @include mobile(1118px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 56px;
+      margin-bottom: 72px;
+    }
+
+    &__image {
+      max-width: 500px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      @include mobile(1335px) {
+        padding: 0 50px;
+      }
+
+      @include mobile(986px) {
+        padding: 0 20px;
+      }
+
+      &__title {
+        font-weight: 700;
+        line-height: 32px;
+      }
+
+      &__descriptions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 56px;
+        row-gap: 48px;
+        margin-top: 36px;
+
+        @include mobile(600px) {
+          grid-template-columns: 1fr;
+        }
+
+        .description {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 30px;
+          max-width: 350px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          &::before {
+            content: '';
+            background-image: url(../../../../assets/svg/Check-Icon.svg);
+            background-position: center;
+            background-size: cover;
+            height: 24px;
+            width: 24px;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+}

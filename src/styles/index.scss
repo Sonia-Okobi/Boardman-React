@@ -1,0 +1,70 @@
+@import '../styles/common/pages';
+@import '../styles/common/font';
+@import '../styles/common/base-button';
+@import '../styles/common/mixins';
+
+:root {
+  --boardman-primary: #6ae5b4;
+  --boardman-black: #232340;
+  --boardman-purple: #2d2d55;
+  --boardman-purple2: #204379;
+  --background: #fdfdff;
+  --white: 255, 255, 255;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  background: transparent;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  background: var(--background);
+  color: var(--boardman-black);
+  font-family: 'Exo', Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+  color: inherit;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+
+  @include mobile(500px){
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
