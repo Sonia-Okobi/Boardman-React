@@ -3,7 +3,7 @@
 .home-page {
   &__home-hero {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 
     &::after {
       content: '';
@@ -21,7 +21,7 @@
     }
 
     &.hero {
-      margin-top: 79px;
+      padding-top: 168px;
     }
 
     &__content {

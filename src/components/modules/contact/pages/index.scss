@@ -4,6 +4,10 @@
   &__contact-hero {
     position: relative;
 
+    &.hero{
+      padding-top: 167px;
+    }
+
     &__text {
       max-width: 1170px;
       margin: 0 auto;

@@ -3,7 +3,7 @@
 .about-page {
   &__about-hero {
     &.hero {
-      margin-top: 75px;
+      padding-top: 167px;
       padding-left: 50px;
 
       @include mobile(986px) {
@@ -23,6 +23,8 @@
       }
 
       &__text {
+        margin-top: 6px;
+
         @include mobile(986px) {
           padding-right: 20px;
         }
